@@ -1,7 +1,4 @@
-import * as React from 'react';
-import Filters from './components/Filters';
-
-// Delete me
-export const Thing = () => {
-  return <Filters />;
-};
+export { Filters } from './components/catalog/Filters';
+export { PaginationRow } from './components/catalog/PaginationRow';
+export { ProductSorting } from './components/catalog/ProductSorting';
+export * from './types/filters';
