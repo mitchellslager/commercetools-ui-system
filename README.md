@@ -21,17 +21,23 @@ Example of how to use the `<Filters />` component.
 ```jsx
 import { Filters } from 'commercetools-ui-system';
 
+type FilterBlockOption = {
+  label: string
+  value: string
+  count?: number
+}
+
 const config = [
   {
     title: 'Designer',
     name: 'designer',
-    options: options.designer,
+    options: options.designer, // FilterBlockOption[]
     defaultExpanded: true,
   },
   {
     title: 'Colors',
     name: 'colors',
-    options: options.colors,
+    options: options.colors, // FilterBlockOption[]
     defaultExpanded: true,
   },
 ];
@@ -48,4 +54,4 @@ const config = [
 ## Required peer dependencies
 
 There are a few required peer dependencies to use this package:
-`react`, `react-dom` and `
+`react` and `react-dom`
